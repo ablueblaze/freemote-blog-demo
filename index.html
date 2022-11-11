@@ -2,12 +2,103 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Freemote blog demo</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div class="container" id="app">
+      <header>
+        <h1>Freemote Blog</h1>
+        <p>
+          Written by Aaron Jack who lives wherever he wants, and works whenever
+          he wants.
+        </p>
+      </header>
+      <section class="container">
+        <div class="feature-post">
+          <img
+            src="public/big-post1.png"
+            alt="Abstract art of artist drawing fingerprint in a pool"
+          />
+          <div class="post-text">
+            <a class="post-link" href="#">
+              <h2>How to make your web design unique</h2>
+              <p>
+                what makes visual content unique & how to create it without
+                breaking the rules
+              </p>
+            </a>
+            <div class="post-marker">
+              <img src="public/Arron-avatar.png" alt="avatar image of Aaron" />
+              <div>
+                <p>Aaron Jack</p>
+                <p>May 10 - 12 Min Read</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container old-section">
+        <div class="old-post">
+          <img
+            src="public/post-2.png"
+            alt="people climbing onto a giant spread sheet"
+          />
+          <div class="post-text">
+            <a class="post-link" href="#">
+              <h2>Landing for Business</h2>
+              <p>When does your business need a landing page?</p>
+            </a>
+            <div class="post-marker">
+              <img src="public/Arron-avatar.png" alt="avatar image of Aaron" />
+              <div>
+                <p>Aaron Jack</p>
+                <p>May 10 - 12 Min Read</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="old-post">
+          <img src="public/post-3.png" alt="Hand touching a tablet in space" />
+          <div class="post-text">
+            <a class="post-link" href="#">
+              <h2>Dashboard Design</h2>
+              <p>Anatomy of an effective dashboard</p>
+            </a>
+            <div class="post-marker">
+              <img src="public/Arron-avatar.png" alt="avatar image of Aaron" />
+              <div>
+                <p>Aaron Jack</p>
+                <p>May 10 - 12 Min Read</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="old-post">
+          <img src="public/post-4.png" alt="Star rising over a touch screen" />
+          <div class="post-text">
+            <a class="post-link" href="#">
+              <h2>UI Secrets They Don't Want You To Know</h2>
+              <p>Secrets uncovered after years in the industry</p>
+            </a>
+            <div class="post-marker">
+              <img src="public/Arron-avatar.png" alt="avatar image of Aaron" />
+              <div>
+                <p>Aaron Jack</p>
+                <p>May 10 - 12 Min Read</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
     <script type="module" src="/main.js"></script>
   </body>
 </html>

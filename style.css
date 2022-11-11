@@ -1,97 +1,150 @@
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
 }
-a:hover {
-  color: #535bf2;
+
+html,
+body {
+  height: 100%;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  font-family: 'Merriweather', serif;
+  padding: 0 1rem;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
+/*
+############
+Container
+############
+*/
 
-#app {
-  max-width: 1280px;
+.container {
+  width: 100%;
+  max-width: 920px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #f7df1eaa);
+/*
+############
+Typography
+############
+*/
+
+h1,
+h2,
+h3 {
+  font-family: 'Montserrat', sans-serif;
 }
 
-.card {
-  padding: 2em;
+a {
+  color: #000;
+  text-decoration: none;
 }
 
-.read-the-docs {
-  color: #888;
+/*
+############
+Header
+############
+*/
+
+header {
+  margin-top: 120px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid lightgray;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
+header p {
   font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  margin-top: 10px;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+/*
+############
+Feature post
+############
+*/
+
+.feature-post {
+  display: flex;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+.feature-post > img {
+  width: 100%;
+  max-width: 65%;
+  height: auto;
+  margin-right: 30px;
+}
+
+/*
+############
+Post text
+############
+*/
+
+.post-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.post-link p {
+  margin-top: 15px;
+}
+
+/*
+############
+post marker
+############
+*/
+
+.post-marker {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.post-marker > img {
+  width: 100%;
+  max-width: 50px;
+  height: auto;
+  margin-right: 30px;
+  border-radius: 100%;
+}
+
+/*
+############
+old posts
+############
+*/
+
+.old-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.old-post {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  max-width: 350px;
+}
+
+.old-post > img {
+  width: 100%;
+  height: auto;
+  margin-right: 30px;
 }
